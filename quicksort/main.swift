@@ -10,8 +10,10 @@ import Foundation
 
 print("Hello, World!")
 
-var a = [5,3,6,2,1,5,7,8,9,4]
+//var a = [5,3,6,2,1,5,7,8,9,4]
 //var a = [35, 33,42,10,14,19,27,44,26,31]
+var a = [77, 45, 100, 38, 72, 24, 37, 84, 22, 56, 17, 51, 71, 1,58, 43, 42, 87, 62, 44, 47, 27, 50, 41, 83, 11, 60, 97, 98, 95, 52, 8, 80, 12, 30, 53, 2, 32, 18, 55, 61, 19, 96, 10, 73, 21, 57, 6, 91, 89
+]
 
 func swap(num1: Int, num2: Int) {
     let temp = a[num1];
@@ -24,7 +26,7 @@ func quicksort ( array: inout [Int], left: Int, right: Int) {
     var low = left;
     var high = right-1;
     
-    if(high == low || high < low) {
+    if(right == low || high < low) {
         return
     }
     for _ in 0...array.count {
